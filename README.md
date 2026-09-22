@@ -1,4 +1,7 @@
-# Personal Portfolio ⚡️ 
+# Personal Portfolio - Eyad Ahmed ⚡
+
+This repository is based on https://github.com/varadbhogayata/varadbhogayata.github.io.
+️ 
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
 > https://varadbhogayata.github.io
