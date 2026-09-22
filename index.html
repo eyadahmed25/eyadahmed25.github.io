@@ -418,137 +418,11 @@
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text indigo">Projects</h3>
       <div class="container">
+        <div id="dynamic-projects" class="row"></div>
         <div class="row">
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Modelpha" src="/assets/img/project-modelpha.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator indigo-text hoverline">Modelpha<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A fintech platform that generates three-statement financial models from SEC XBRL filings.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Python, Financial Modeling, SEC XBRL Data</li>
-                  <li>Co-founded and built a platform automating three-statement financial model generation.</li>
-                  <li>Parses SEC XBRL filings directly to produce structured financial models.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for Modelpha" href="YOUR_GITHUB_REPO_LINK_HERE"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
+          <div class="col s12 center-align">
+            <button id="load-more-btn" class="btn indigo waves-effect waves-light">Load More</button>
           </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="PhysioPal" src="/assets/img/project-physiopal.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator indigo-text hoverline">PhysioPal<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  An AI-driven physiotherapy adherence platform.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Focus:</b> AI, Health Tech</li>
-                  <li>Co-founded a platform helping patients stay on track with physiotherapy recovery plans.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for PhysioPal" href="YOUR_GITHUB_REPO_LINK_HERE"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 1. Django Project -->
-          <!-- <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator indigo-text hoverline">Local Library Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>
-                  <li>Users can view list and detail information for books and authors.</li>
-                  <li>Admin users can create and manage models.</li>
-                  <li>Librarians can renew reserved books.</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/django-local-library"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- CV Analyzer -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="CV Analyzer" src="/assets/img/project-cv-analyzer.png"
-                style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator indigo-text hoverline">CV Analyzer<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A self-contained HTML tool for analyzing CVs using PDF.js, Mammoth.js, and the Anthropic API.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title indigo-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, JavaScript, PDF.js, Mammoth.js, Anthropic API</li>
-                  <li>Parses PDF and Word resumes directly in the browser, no backend required.</li>
-                  <li>Uses the Anthropic API to generate structured feedback on submitted CVs.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for CV Analyzer" href="YOUR_GITHUB_REPO_LINK_HERE"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ************* -->
         </div>
       </div>
     </section>
@@ -810,6 +684,75 @@
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
+  </script>
+
+  <!-- Dynamic Project Content -->
+  <script type="text/javascript">
+    const projects = [
+      {
+        title: "PhysioPal",
+        description: "An AI-driven physiotherapy adherence platform to help patients stay on track with their recovery.",
+        tools: "AI, Health Tech",
+        github: "https://github.com/eyadahmed25/PhysioPal"
+      },
+      {
+        title: "Perform Boxing Studio App",
+        description: "An app built for a boxing studio to support scheduling and performance tracking.",
+        tools: "App Development",
+        github: "https://github.com/eyadahmed25/Perform-Boxing-Studio-App---Public"
+      },
+      {
+        title: "CV Analyzer",
+        description: "A self-contained HTML tool for analyzing CVs using PDF.js, Mammoth.js, and the Anthropic API.",
+        tools: "HTML, JavaScript, PDF.js, Mammoth.js, Anthropic API",
+        github: "https://github.com/eyadahmed25/CV-Analyzer-Public"
+      },
+      {
+        title: "MediBot",
+        description: "A medical chatbot project.",
+        tools: "Python, AI",
+        github: "https://github.com/eyadahmed25/MediBot"
+      }
+    ];
+
+    let projectsShown = 2;
+
+    function renderProjects() {
+      const container = document.getElementById("dynamic-projects");
+      container.innerHTML = "";
+
+      projects.slice(0, projectsShown).forEach(project => {
+        const card = document.createElement("div");
+        card.className = "col s12 m6 l4";
+        card.innerHTML = `
+          <div class="card medium">
+            <div class="card-content">
+              <span class="card-title indigo-text">${project.title}</span>
+              <p>${project.description}</p>
+            </div>
+            <div class="card-action">
+              <b>Tools:</b> ${project.tools}<br>
+              <a href="${project.github}" target="_blank">GitHub</a>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      const loadMoreBtn = document.getElementById("load-more-btn");
+      if (projectsShown >= projects.length) {
+        loadMoreBtn.style.display = "none";
+      } else {
+        loadMoreBtn.style.display = "inline-block";
+      }
+    }
+
+    document.getElementById("load-more-btn").addEventListener("click", function() {
+      projectsShown += 2;
+      renderProjects();
+    });
+
+    renderProjects();
   </script>
 </body>
 
